@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="zverimex.css">
+    <style>
+        form{
+            width: 600px;
+            margin: auto;
+            line-height: 200%;
+            position: relative;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+
+        }
+        .red{
+            color: red;
+        }
+        #vlevo{
+            width: 250px;
+            display:flex;
+            flex-direction: column;
+            align-items: flex-end;
+            margin-right: 10px;
+        }
+        #vpravo{
+            width: 280px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            
+        }
+    </style>
+</head>
+<body>
+    <div id="stranka">
+        <header>
+            <img src="lev.png" alt="lev">
+            <h1>HAPPY PET</h1>
+            <p>V aleji 13; 165 45 Jarovice; tel: 456 123 789; email: Happy.pet@volny.cz</p>
+            
+        </header>
+        <nav>
+            <h1>Menu</h1>
+            <ul style="list-style-type: none;">
+                <li><a class="animated" href="Uvod.html">Introduction</a></li>
+                <li><a class="animated" href="Nabidka.html">Our offer</a></li>
+                <li><a class="animated" href="Cenik.html">Prices</a></li>
+                <li><a class="animated" href="KontaktForm.html">Contact</a></li>
+                <li><a class="animated" href="Galerie.html">Galery</a></li>
+            </ul>
+        </nav>
+        <article>
+            <h2 class="nadpis_zverimex">Contact us</h2>
+            <form name="formular1">
+                <div id="vlevo">
+                    <br><br><br>
+                    <label for="jmeno">Name <span class="red">*</span> </label>
+                    <label for="email">E-mail <span class="red">*</span> </label>
+                    <label for="phone">Phone </label>
+                    <label for="radio">Contact me by </label>
+                    <label for="question">Question for </label>
+                    <label for="message">Message<span class="red">*</span> </label>
+                    
+                    
+                </div>
+                <div class="vpravo">
+                    <p>We'd love to hear from you! Leave a message below and we will get in touch with you shortly.</p>
+                    <input type="text" name="jmeno" placeholder="John Doe" size="50" maxlength="50"><br> 
+                    <input type="text" name="email" placeholder="john@example.com" size="50" maxlength="50"><br>
+                    <input type="text" name="pnone" placeholder="123 456 789" size="50" maxlength="50"><br>
+                    <input class="zarovnat" type="radio" name="vek1" text="E-mail"/>E-mail
+                    <input type="radio" name="vek1" text="Phone"/>Phone<br>
+                    <select name="question" size="1">
+                        <option value="food">Food</option>
+                        <option value="dogs">Dogs</option>
+                        <option selected value="sales">Sales</option>
+                        <option value="cats">Cats</option>
+                        <option value="parrots">Parrots</option>
+                        <option value="toys">Toys</option>
+                    </select><br>
+                    <textarea name="message" cols="50" rows="3"></textarea><br>
+                    <br>
+                    <button name="submit" value="Submit">Submit</button>
+                    
+                </div>
+        </article>
+        <footer>
+            <audio src="kanarek.mp3" controls></audio>    
+            <p>©K.HotovaSvadova </p>
+        </footer>
+
+
+
+    </div>
+</body>
+</html>
